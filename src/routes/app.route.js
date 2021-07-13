@@ -5,7 +5,7 @@ import Pedidos from '../views/Pedidos'
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import AssignmentIcon from '@material-ui/icons/Assignment';
-import Login from '../views/login';
+
 
 const AppRoutes = [
     { text: 'Dashboard', path: '/dashboard', component: <Dashboard/>, icon: <DashboardIcon />},
