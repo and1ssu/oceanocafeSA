@@ -1,25 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import Sidmenu from './components/SIdemenu'
+import AuthRoutes from './routes/auth.route'
+import AppRoutes from './routes/app.route'
+
+const auth = true
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <Sidmenu routes={auth ? AppRoutes : AuthRoutes} />    
 }
 
 export default App;
